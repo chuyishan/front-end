@@ -4,14 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classroom平台首页</title>
+    <title>华为云 - Classroom</title>
     <style>
         * {
             margin: 0px;
             padding: 0px;
         }
 
-        .nav {}
+        .nav {
+            height: 60px;
+            width: 100%;
+        }
+
+        .public-logo {
+            margin-left: 40px;
+            margin-top: 10px;
+            width: 120px;
+            height: 40px;
+            background-image: url("./image/public-logo.svg");
+            background-size: 100% 100%;
+        }
+
+        .nav .menu ul[menu_item] {
+            margin-top: 12px;
+            margin-left: 45px;
+            float: left;
+        }
 
         .header {}
 
@@ -32,9 +50,9 @@
 <body>
     <div class="nav">
         <!--页面导航区域-->
-        <div>global_logo</div>
-        <div>
-            <ol>
+        <div class="public-logo"></div>
+        <div class="menu">
+            <ul menu_item="">
                 <li>首页</li>
                 <li>教学市场</li>
                 <li>云课堂</li>
@@ -42,18 +60,42 @@
                 <li>云端实验室</li>
                 <li>新工科实验班</li>
                 <li>学习交流</li>
-            </ol>
+                <!--
+                <li menu_item="index">首页</li>
+                <li menu_item="teching">教学市场</li>
+                <li menu_item="classroom">云课堂</li>
+                <li menu_item="train">培训认证</li>
+                <li menu_item="cloudlab">云端实验室</li>
+                <li menu_item="newclass">新工科实验班</li>
+                <li menu_item="exchange">学习交流</li>
+            -->
+            </ul>
         </div>
         <div>
             <a>btn_教学平台</a>
         </div>
         <div>
             <span>help</span>
-            <li>帮助中心</li>
-            <li>用户论坛</li>
-            <li>版本历程</li>
+            <div>
+                <ul>
+                    <li>帮助中心</li>
+                    <li>用户论坛</li>
+                    <li>版本历程</li>
+                </ul>
+            </div>
         </div>
-        <div>per_info</div>
+        <div>
+            <span>per_info</span>
+            <div>
+                <ul>
+                    <li>费用中心</li>
+                    <li>Classroom控制台</li>
+                    <li>子账号管理</li>
+                    <li>意见反馈</li>
+                    <li>推出登录</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="header">
